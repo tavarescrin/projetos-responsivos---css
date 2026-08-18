@@ -1,0 +1,165 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container-left {
+    display: inline-block;
+    margin: 47px 0 102px 42px;
+}
+
+.container-right {
+    display: inline-block;
+    position: absolute;
+    margin-right: 57px;
+}
+
+header {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+a {
+    color: #17233D;
+    width: 83;
+    height: 21;
+    margin: 0 32px; 
+    cursor: pointer;        
+}
+
+
+.botão {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    width: 67px;
+    background: #6FBF44;
+    color: #FFFF;
+    border: none;
+    border-radius: 15px;
+    width: 124px;
+    height: 51px;
+    top: 32px;
+    left: 420px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 62px;
+    leading-trim: NONE;
+    line-height: 82px;
+    color: #161A49;
+    margin-top: 342px;
+    margin-right: 57px;
+    margin-bottom: 47px;
+}
+
+p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 33px;
+    color: #4B505A;
+    margin-right: 146px;
+    margin-bottom: 55px;
+}
+
+img {
+    margin: 246px 84.82px 102px 121px;
+}
+
+.learn-more {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color:#6FBF44;
+    border: none;
+    background: #FFFF;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom:114px;
+}
+
+button:hover {
+opacity: .8;
+}
+
+button:active {
+opacity: .5;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        margin: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .container-left,
+    .container-right {
+        display: contents;
+    }
+
+    header {
+        order: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 64px;
+        padding: 0 16px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    header button {
+        width: 91px;
+        height: 31px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    h1 {
+        order: 2;
+        margin: 35px 35px 25px;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    p {
+        order: 3;
+        margin: 0 40px 20px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .learn-more {
+        order: 4;
+        align-self: center;
+        margin: 0 0 35px;
+        padding: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    img {
+        order: 5;
+        align-self: center;
+        width: 85%;
+        max-width: 420px;
+        height: auto;
+        margin: 0 0 25px;
+    }
+}
